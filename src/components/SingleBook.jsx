@@ -23,7 +23,7 @@ class SingleBook extends Component {
             <Card.Text>{this.props.book.category}</Card.Text>
             <Card.Text>{this.props.book.price}$</Card.Text>
             <Button variant="primary">Acquista</Button>
-            {this.state.selected && <CommentArea />}
+            {this.state.selected && <CommentArea id={this.props.book.asin} />}
             {/* cortocircuito: se lo stato è falso, non si mette il componente */}
           </Card.Body>
         </Card>
