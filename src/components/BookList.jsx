@@ -1,16 +1,16 @@
-import { Container, FormControl, Row } from "react-bootstrap";
-
-import SingleBook from "./SingleBook";
 import { Component } from "react";
+import { Container, FormControl, Row } from "react-bootstrap";
+import SingleBook from "./SingleBook";
 
 class BookList extends Component {
   state = {
     searchQuery: "",
   };
+
   render() {
     return (
       <Container>
-        <h2> Libri Disponibili </h2>
+        <h2>Libri Disponibili</h2>
 
         <FormControl
           className="w-50 my-4"
